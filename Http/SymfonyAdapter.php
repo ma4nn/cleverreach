@@ -38,7 +38,7 @@ class SymfonyAdapter implements AdapterInterface, LoggerAwareInterface
      * @param array $config
      * @param LoggerInterface|null $logger
      */
-    public function __construct(private array $config = [], LoggerInterface $logger = null, private ?HttpClientInterface $client = null)
+    public function __construct(private array $config = [], LoggerInterface|null $logger = null, private HttpClientInterface|null $client = null)
     {
         $endpoint = isset($config[self::API_ENDPOINT_CONFIG_KEY]) ? $config[self::API_ENDPOINT_CONFIG_KEY] : self::API_ENDPOINT;
 

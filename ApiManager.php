@@ -49,7 +49,7 @@ class ApiManager implements ApiManagerInterface
     /**
      * {@inheritdoc}
      */
-    public function getSubscriber(string $email, int $groupId = null)
+    public function getSubscriber(string $email, int|null $groupId = null)
     {
         if ($groupId) {
             return $this->adapter->action('get', "/v3/groups.json/{$groupId}/receivers/{$email}");

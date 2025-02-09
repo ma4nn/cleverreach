@@ -49,7 +49,7 @@ class ApiManagerTest extends TestCase
         $tags = ['tag 1', 'tag 2'];
 
         $email = 'johnny.doe@example.org';
-        $dependencies->adapter
+        $dependencies->adapter->expects($this->once())
             ->method('action')
             ->with('post',
                 '/v3/groups.json/' . $groupId .'/receivers',
@@ -96,6 +96,5 @@ class ApiManagerTest extends TestCase
 
 class ApiManagerTestDependencies
 {
-    /** @var AdapterInterface|MockObject */
-    public $adapter;
+    public MockObject&AdapterInterface $adapter;
 }
