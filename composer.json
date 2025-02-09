@@ -32,6 +32,7 @@
         }
     },
     "require-dev": {
+        "ext-zip": "*",
         "phpunit/phpunit": "^10.0||^11.0||^12.0",
         "symfony/panther": "^2.2",
         "phpstan/phpstan": "^2.1"
