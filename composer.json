@@ -18,8 +18,8 @@
     "require": {
         "php": "^8.1",
         "ext-json": "*",
-        "symfony/http-client": "^7.2",
-        "psr/log": "^1|^2|^3"
+        "symfony/http-client": "^6.4||^7.2",
+        "psr/log": "^1||^2||^3"
     },
     "autoload": {
         "psr-4": {
