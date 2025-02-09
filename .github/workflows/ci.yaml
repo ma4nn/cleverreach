@@ -24,9 +24,8 @@ jobs:
       env:
         fail-fast: true
 
-    - uses: php-actions/composer@v6
-      with:
-        php_version: ${{ matrix.php-version }}
+    - name: Install dependencies
+      run: composer install
 
     - name: Run PHPUnit tests
       run: vendor/bin/phpunit
