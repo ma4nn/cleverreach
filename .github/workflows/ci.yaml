@@ -21,6 +21,8 @@ jobs:
       with:
         php-version: ${{ matrix.php-version }}
         extensions: zip
+      env:
+        fail-fast: true
 
     - uses: php-actions/composer@v6
       with:
