@@ -1,0 +1,205 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#2 \$groupId \(int\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 1
+			path: ApiManager.php
+
+		-
+			message: '#^Method Enhavo\\Component\\CleverReach\\ApiManager\:\:createSubscriber\(\) has parameter \$attributes with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: ApiManager.php
+
+		-
+			message: '#^Method Enhavo\\Component\\CleverReach\\ApiManager\:\:createSubscriber\(\) has parameter \$globalAttributes with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: ApiManager.php
+
+		-
+			message: '#^Method Enhavo\\Component\\CleverReach\\ApiManager\:\:createSubscriber\(\) has parameter \$tags with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: ApiManager.php
+
+		-
+			message: '#^Method Enhavo\\Component\\CleverReach\\ApiManager\:\:triggerDoubleOptInEmail\(\) has parameter \$options with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: ApiManager.php
+
+		-
+			message: '#^Method Enhavo\\Component\\CleverReach\\ApiManager\:\:triggerDoubleOptOutEmail\(\) has parameter \$options with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: ApiManager.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#2 \$groupId \(int\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 1
+			path: ApiManagerInterface.php
+
+		-
+			message: '#^Method Enhavo\\Component\\CleverReach\\ApiManagerInterface\:\:createSubscriber\(\) has parameter \$attributes with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: ApiManagerInterface.php
+
+		-
+			message: '#^Method Enhavo\\Component\\CleverReach\\ApiManagerInterface\:\:createSubscriber\(\) has parameter \$globalAttributes with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: ApiManagerInterface.php
+
+		-
+			message: '#^Method Enhavo\\Component\\CleverReach\\ApiManagerInterface\:\:triggerDoubleOptInEmail\(\) has parameter \$options with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: ApiManagerInterface.php
+
+		-
+			message: '#^Method Enhavo\\Component\\CleverReach\\ApiManagerInterface\:\:triggerDoubleOptOutEmail\(\) has parameter \$options with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: ApiManagerInterface.php
+
+		-
+			message: '#^Method Enhavo\\Component\\CleverReach\\Http\\AdapterInterface\:\:action\(\) has parameter \$data with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: Http/AdapterInterface.php
+
+		-
+			message: '#^Call to an undefined method Symfony\\Contracts\\HttpClient\\Exception\\TransportExceptionInterface\:\:getResponse\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: Http/SymfonyAdapter.php
+
+		-
+			message: '#^Cannot call method request\(\) on Symfony\\Contracts\\HttpClient\\HttpClientInterface\|null\.$#'
+			identifier: method.nonObject
+			count: 2
+			path: Http/SymfonyAdapter.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#2 \$logger \(Psr\\Log\\LoggerInterface\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 1
+			path: Http/SymfonyAdapter.php
+
+		-
+			message: '#^Method Enhavo\\Component\\CleverReach\\Http\\SymfonyAdapter\:\:__construct\(\) has parameter \$config with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: Http/SymfonyAdapter.php
+
+		-
+			message: '#^Method Enhavo\\Component\\CleverReach\\Http\\SymfonyAdapter\:\:action\(\) has parameter \$data with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: Http/SymfonyAdapter.php
+
+		-
+			message: '#^Method Enhavo\\Component\\CleverReach\\Http\\SymfonyAdapter\:\:getConfig\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: Http/SymfonyAdapter.php
+
+		-
+			message: '#^Method Enhavo\\Component\\CleverReach\\Http\\SymfonyAdapter\:\:getConfig\(\) has parameter \$key with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: Http/SymfonyAdapter.php
+
+		-
+			message: '#^Method Enhavo\\Component\\CleverReach\\Http\\SymfonyAdapter\:\:log\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: Http/SymfonyAdapter.php
+
+		-
+			message: '#^Method Enhavo\\Component\\CleverReach\\Http\\SymfonyAdapter\:\:log\(\) has parameter \$data with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: Http/SymfonyAdapter.php
+
+		-
+			message: '#^Property Enhavo\\Component\\CleverReach\\Http\\SymfonyAdapter\:\:\$config is never read, only written\.$#'
+			identifier: property.onlyWritten
+			count: 1
+			path: Http/SymfonyAdapter.php
+
+		-
+			message: '#^Call to an undefined method Enhavo\\Component\\CleverReach\\Http\\AdapterInterface\|PHPUnit\\Framework\\MockObject\\MockObject\:\:method\(\)\.$#'
+			identifier: method.notFound
+			count: 3
+			path: Tests/ApiManagerTest.php
+
+		-
+			message: '#^Call to an undefined method PHPUnit\\Framework\\MockObject\\Builder\\InvocationStubber\:\:with\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: Tests/ApiManagerTest.php
+
+		-
+			message: '#^Parameter \#1 \$adapter of class Enhavo\\Component\\CleverReach\\ApiManager constructor expects Enhavo\\Component\\CleverReach\\Http\\AdapterInterface, Enhavo\\Component\\CleverReach\\Http\\AdapterInterface\|PHPUnit\\Framework\\MockObject\\MockObject given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/ApiManagerTest.php
+
+		-
+			message: '#^Instanceof between Symfony\\Component\\Panther\\ProcessManager\\WebServerManager and Symfony\\Component\\Panther\\ProcessManager\\WebServerManager will always evaluate to true\.$#'
+			identifier: instanceof.alwaysTrue
+			count: 1
+			path: Tests/Http/SymfonyAdapterTest.php
+
+		-
+			message: '#^Method Enhavo\\Component\\CleverReach\\Tests\\Http\\SymfonyAdapterTest\:\:createSymfonyAdapter\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: Tests/Http/SymfonyAdapterTest.php
+
+		-
+			message: '#^Method Enhavo\\Component\\CleverReach\\Tests\\Http\\SymfonyAdapterTest\:\:testAction\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: Tests/Http/SymfonyAdapterTest.php
+
+		-
+			message: '#^Method Enhavo\\Component\\CleverReach\\Tests\\Http\\SymfonyAdapterTest\:\:testAuthorize\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: Tests/Http/SymfonyAdapterTest.php
+
+		-
+			message: '#^Method Enhavo\\Component\\CleverReach\\Tests\\Http\\SymfonyAdapterTest\:\:testFailAction\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: Tests/Http/SymfonyAdapterTest.php
+
+		-
+			message: '#^Method Enhavo\\Component\\CleverReach\\Tests\\Http\\SymfonyAdapterTest\:\:testFailAuthorize\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: Tests/Http/SymfonyAdapterTest.php
+
+		-
+			message: '#^Static property Enhavo\\Component\\CleverReach\\Tests\\Http\\SymfonyAdapterTest\:\:\$server \(Symfony\\Component\\Panther\\ProcessManager\\WebServerManager\) does not accept null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: Tests/Http/SymfonyAdapterTest.php
+
+		-
+			message: '#^Parameter \#1 \$json of function json_decode expects string, string\|false given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/fixtures/server/action.php
+
+		-
+			message: '#^Parameter \#1 \$json of function json_decode expects string, string\|false given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/fixtures/server/token.php
